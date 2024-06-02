@@ -1,0 +1,1 @@
+Ipfinal.bak Veritabanı yedeğidir.
