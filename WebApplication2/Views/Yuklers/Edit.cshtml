@@ -1,0 +1,46 @@
+﻿@model WebApplication2.Models.Yukler
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layouttemel.cshtml";
+}
+
+<h1>Düzenleme Sayfası</h1>
+
+<h4>Yukler</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="YukId" />
+            <div class="form-group">
+                <label asp-for="YukTuru" class="control-label"></label>
+                <input asp-for="YukTuru" class="form-control" />
+                <span asp-validation-for="YukTuru" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Agirlik" class="control-label"></label>
+                <input asp-for="Agirlik" class="form-control" />
+                <span asp-validation-for="Agirlik" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="ImageFile">Upload Image</label>
+                <input type="file" asp-for="ImageFile" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Kaydet" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a button type="button" class="btn btn-warning" asp-action="Index">Geri Dön</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,66 @@
+﻿@model IEnumerable<WebApplication2.Models.Kalkislar>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layouttemel.cshtml";
+}
+
+<h1>Kalkışlar</h1>
+
+<table id="kalkislarTable" class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Gemi.GemiAdi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Liman.LimanAdi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KalkisZamani)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Gemi.GemiAdi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Liman.LimanAdi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.KalkisZamani)
+                </td>
+                <td>
+                    <a button type="button" class="btn btn-success" asp-action="Edit" asp-route-id="@item.KalkisId">Düzenle</a> |
+                    <a type="button" class="btn btn-primary" asp-action="Details" asp-route-id="@item.KalkisId">Detaylar</a> |
+                    <a button type="button" class="btn btn-danger" asp-action="Delete" asp-route-id="@item.KalkisId">Sil</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p>
+    <a asp-action="Create" class="btn btn-primary">Yeni Kayıt Ekle</a>
+</p>
+@section Scripts {
+    <script src="~/lib/datatables/js/jquery.dataTables.min.js"></script>
+@*     <script>
+        $(document).ready(function () {
+            $('#kalkislarTable').DataTable();
+        });
+    </script> *@
+    <script>
+        $(document).ready(function () {
+            $('#kalkislarTable').DataTable({
+                language: {
+                    url: '//cdn.datatables.net/plug-ins/1.10.25/i18n/Turkish.json'
+                }
+            });
+        });
+    </script>
+}

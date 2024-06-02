@@ -1,0 +1,45 @@
+﻿@model WebApplication2.Models.Kalkislar
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layouttemel.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>Kalkislar</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="GemiId" class="control-label"></label>
+                <select asp-for="GemiId" class="form-control" asp-items="ViewBag.GemiId"></select>
+                <span asp-validation-for="GemiId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LimanId" class="control-label"></label>
+                <select asp-for="LimanId" class="form-control" asp-items="ViewBag.LimanId"></select>
+                <span asp-validation-for="LimanId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KalkisZamani" class="control-label"></label>
+                <input asp-for="KalkisZamani" class="form-control" />
+                <span asp-validation-for="KalkisZamani" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a button type="button" class="btn btn-success" asp-action="Index">Geri Dön</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

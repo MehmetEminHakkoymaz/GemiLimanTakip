@@ -1,0 +1,38 @@
+﻿@model WebApplication2.Models.Cascade
+@using WebApplication2.Helpers
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layouttemel.cshtml";
+}
+
+<div class="form-control">
+    @Html.Label("Gemiler")
+    @Html.DropDownList("GemiId", Model.GemiList, "--Gemi Seçiniz--", new { @class = "form-control", id = "GemiId" })
+    <br />
+    @Html.Label("KalkIş Tarihleri")
+    @Html.DropDownList("KalkisId", Model.KalkisList, "--Kalkis Tarihi--", new { @class = "form-control", id = "KalkisId" })
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script>
+    $(function () {
+        $('#GemiId').change(function () {
+            var id = $('#GemiId').val();
+            $.ajax({
+                url: '/Cascade/GetKalkis',
+                data: { GemiId: id },
+                type: "POST",
+                dataType: "Json",
+                success: function (data) {
+                    console.log(data);
+                    $('#KalkisId').empty();
+                    for (var i = 0; i < data.length; i++) {
+                        $('#KalkisId').append("<option value='" + data[i].Value + "'>" + data[i].Text + "</option>");
+                    }
+                }
+            });
+        });
+    });
+</script>

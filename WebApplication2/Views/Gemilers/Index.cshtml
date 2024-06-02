@@ -1,0 +1,71 @@
+﻿@using WebApplication2.Helpers
+@model IEnumerable<WebApplication2.Models.Gemiler>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layouttemel.cshtml";
+}
+
+<h1>Gemiler</h1>
+
+
+<table id="gemilerTable" class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.GemiAdi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bayrak)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tonaj)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GemiAdi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Bayrak)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tonaj)
+                </td>
+                <td>
+                    <a button type="button" class="btn btn-success" asp-action="Edit" asp-route-id="@item.GemiId">Düzenle</a> |
+                    <a type="button" class="btn btn-primary" asp-action="Details" asp-route-id="@item.GemiId">Detaylar</a> |
+                    <a button type="button" class="btn btn-danger" asp-action="Delete" asp-route-id="@item.GemiId">Sil</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p>
+    <a asp-action="Create" class="btn btn-primary">Yeni Kayıt Ekle</a>
+</p>
+
+
+@section Scripts {
+    <script src="~/lib/datatables/js/jquery.dataTables.min.js"></script>
+@*     <script>
+        $(document).ready(function () {
+            $('#gemilerTable').DataTable();
+        });
+    </script> *@
+    <script>
+        $(document).ready(function () {
+            $('#gemilerTable').DataTable({
+                language: {
+                    url: '//cdn.datatables.net/plug-ins/1.10.25/i18n/Turkish.json'
+                }
+            });
+        });
+    </script>
+
+}

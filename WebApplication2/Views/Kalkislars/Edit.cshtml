@@ -1,0 +1,45 @@
+﻿@model WebApplication2.Models.Kalkislar
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layouttemel.cshtml";
+}
+
+<h1>Düzenleme Sayfası</h1>
+
+<h4>Kalkışlar</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="KalkisId" />
+            <div class="form-group">
+                <label asp-for="GemiId" class="control-label"></label>
+                <input asp-for="GemiId" class="form-control" />
+                <span asp-validation-for="GemiId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LimanId" class="control-label"></label>
+                <input asp-for="LimanId" class="form-control" />
+                <span asp-validation-for="LimanId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KalkisZamani" class="control-label"></label>
+                <input asp-for="KalkisZamani" class="form-control" />
+                <span asp-validation-for="KalkisZamani" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Kaydet" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a button type="button" class="btn btn-warning" asp-action="Index">Geri Dön</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

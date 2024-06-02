@@ -1,0 +1,66 @@
+﻿@using WebApplication2.Helpers
+
+@model IEnumerable<WebApplication2.Models.Limanlar>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layouttemel.cshtml";
+}
+
+<h1>Limanlar</h1>
+
+<table id="limanlarTable" class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.LimanAdi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sehir)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ulke)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LimanAdi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sehir)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ulke)
+                </td>
+                <td>
+                    @Html.ActionLink("Düzenle", "Edit", new { id = item.LimanId }, new { @class = "btn btn-success" }) |
+                    @Html.ActionLink("Detaylar", "Details", new { id = item.LimanId }, new { @class = "btn btn-primary" }) |
+                    @Html.ActionLink("Sil", "Delete", new { id = item.LimanId }, new { @class = "btn btn-danger" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p>
+    <a asp-action="Create" class="btn btn-primary">Yeni Kayıt Ekle</a>
+</p>
+
+
+@section Scripts {
+    <script src="~/lib/datatables/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#limanlarTable').DataTable({
+                language: {
+                    url: '//cdn.datatables.net/plug-ins/1.10.25/i18n/Turkish.json'
+                }
+            });
+        });
+    </script>
+
+}

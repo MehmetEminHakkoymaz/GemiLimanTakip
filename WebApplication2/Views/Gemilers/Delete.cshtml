@@ -1,0 +1,46 @@
+﻿@model WebApplication2.Models.Gemiler
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layouttemel.cshtml";
+}
+
+<h1>Silme Sayfası</h1>
+
+<h3>Bu kaydı silmek istediğinize emin misiniz?</h3>
+<div>
+    <h4>Gemiler</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GemiAdi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GemiAdi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Bayrak)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Bayrak)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Tonaj)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Tonaj)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LimanId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LimanId)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="GemiId" />
+        <input type="submit" value="Sil" class="btn btn-danger" /> |
+        <a button type="button" class="btn btn-warning" asp-action="Index">Vazgeç</a>
+    </form>
+</div>

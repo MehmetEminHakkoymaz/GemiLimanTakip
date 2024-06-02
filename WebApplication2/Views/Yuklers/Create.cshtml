@@ -1,0 +1,50 @@
+﻿@model WebApplication2.Models.Yukler
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layouttemel.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>Yukler</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="YukTuru" class="control-label"></label>
+                <input asp-for="YukTuru" class="form-control" />
+                <span asp-validation-for="YukTuru" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Agirlik" class="control-label"></label>
+                <input asp-for="Agirlik" class="form-control" />
+                <span asp-validation-for="Agirlik" class="text-danger"></span>
+            </div>
+@*             <div class="form-group">
+                <label asp-for="UrunPhoto" class="control-label"></label>
+                <input asp-for="UrunPhoto" class="form-control" />
+                <span asp-validation-for="UrunPhoto" class="text-danger"></span>
+            </div> *@
+            <div class="form-group">
+                <label asp-for="ImageFile" class="control-label"></label>
+                <input asp-for="ImageFile" class="image/*" />
+                <span asp-validation-for="ImageFile" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a button type="button" class="btn btn-success" asp-action="Index">Geri Dön</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

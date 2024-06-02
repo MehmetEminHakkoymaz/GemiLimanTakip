@@ -1,0 +1,203 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebApplication2
+build_property.RootNamespace = WebApplication2
+build_property.ProjectDir = C:\Users\mehme\source\repos\WebApplication2\WebApplication2\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\mehme\source\repos\WebApplication2\WebApplication2
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Cascade/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzY2FkZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Gemilers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VtaWxlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Gemilers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VtaWxlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Gemilers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VtaWxlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Gemilers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VtaWxlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Gemilers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VtaWxlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Home/deneme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxkZW5lbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Kalkislars/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2Fsa2lzbGFyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Kalkislars/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2Fsa2lzbGFyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Kalkislars/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2Fsa2lzbGFyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Kalkislars/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2Fsa2lzbGFyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Kalkislars/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2Fsa2lzbGFyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Limanlars/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGltYW5sYXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Limanlars/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGltYW5sYXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Limanlars/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGltYW5sYXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Limanlars/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGltYW5sYXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Limanlars/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGltYW5sYXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Personels/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Personels/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Personels/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Personels/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Personels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Shared/_LayoutLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Shared/_LayoutMainPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRNYWluUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Shared/_Layouttemel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXR0ZW1lbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Varislars/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFyaXNsYXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Varislars/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFyaXNsYXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Varislars/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFyaXNsYXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Varislars/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFyaXNsYXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Varislars/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFyaXNsYXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Yuklers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWXVrbGVyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Yuklers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWXVrbGVyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Yuklers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWXVrbGVyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Yuklers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWXVrbGVyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Yuklers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWXVrbGVyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehme/source/repos/WebApplication2/WebApplication2/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-amt9qciysm

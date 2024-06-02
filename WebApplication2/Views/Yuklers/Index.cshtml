@@ -1,0 +1,69 @@
+﻿@model IEnumerable<WebApplication2.Models.Yukler>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layouttemel.cshtml";
+}
+
+<h1>Yukler</h1>
+
+<table id="yuklerTable" class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.YukTuru)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Agirlik)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UrunPhoto)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.YukTuru)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Agirlik)
+                </td>
+                <td>
+                    <img src="@Url.Content("~/Contents/" + (item.UrunPhoto != null ? item.UrunPhoto.Replace("~/Contents/", "") : "default.jpg"))" asp-append-version=true width="50" height="50" />
+                </td>
+                <td>
+                    <a button type="button" class="btn btn-success" asp-action="Edit" asp-route-id="@item.YukId">Düzenle</a> |
+                    <a type="button" class="btn btn-primary" asp-action="Details" asp-route-id="@item.YukId">Detaylar</a> |
+                    <a button type="button" class="btn btn-danger" asp-action="Delete" asp-route-id="@item.YukId">Sil</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p>
+    <a asp-action="Create" class="btn btn-primary">Yeni Kayıt Ekle</a>
+</p>
+
+
+@section Scripts {
+    <script src="~/lib/datatables/js/jquery.dataTables.min.js"></script>
+@*     <script>
+        $(document).ready(function () {
+            $('#').DataTable();
+        });
+    </script> *@
+    <script>
+        $(document).ready(function () {
+            $('#yuklerTable').DataTable({
+                language: {
+                    url: '//cdn.datatables.net/plug-ins/1.10.25/i18n/Turkish.json'
+                }
+            });
+        });
+    </script>
+
+}

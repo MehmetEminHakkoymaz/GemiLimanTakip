@@ -1,0 +1,75 @@
+﻿@model IEnumerable<WebApplication2.Models.Personel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layouttemel.cshtml";
+}
+
+<h1>Personeller</h1>
+
+<table id="personelTable" class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Adi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Soyadi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gorev)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gemi.GemiAdi)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Adi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Soyadi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Gorev)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Gemi.GemiAdi)
+                </td>
+                <td>
+                    <a button type="button" class="btn btn-success" asp-action="Edit" asp-route-id="@item.Gemi.GemiId">Düzenle</a> |
+                    <a type="button" class="btn btn-primary" asp-action="Details" asp-route-id="@item.Gemi.GemiId">Detaylar</a> |
+                    <a button type="button" class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Gemi.GemiId">Sil</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p>
+    <a asp-action="Create" class="btn btn-primary">Yeni Kayıt Ekle</a>
+</p>
+
+
+@section Scripts {
+    <script src="~/lib/datatables/js/jquery.dataTables.min.js"></script>
+@*     <script>
+        $(document).ready(function () {
+            $('#').DataTable();
+        });
+    </script> *@
+    <script>
+        $(document).ready(function () {
+            $('#personelTable').DataTable({
+                language: {
+                    url: '//cdn.datatables.net/plug-ins/1.10.25/i18n/Turkish.json'
+                }
+            });
+        });
+    </script>
+
+}

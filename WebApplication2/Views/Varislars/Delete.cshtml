@@ -1,0 +1,40 @@
+﻿@model WebApplication2.Models.Varislar
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layouttemel.cshtml";
+}
+
+<h1>Silme Sayfası</h1>
+
+<h3>Bu kaydı silmek istediğinize emin misiniz?</h3>
+<div>
+    <h4>Varislar</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GemiId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GemiId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LimanId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LimanId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.VarisZamani)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.VarisZamani)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="VarisId" />
+        <input type="submit" value="Sil" class="btn btn-danger" /> |
+        <a button type="button" class="btn btn-warning" asp-action="Index">Vazgeç</a>
+    </form>
+</div>
